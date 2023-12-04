@@ -1,7 +1,19 @@
 {
-    "rewrites": [
-        { "source": "/", "destination": "/en/index.html" }, 
-        { "source": "/en/(.*)", "destination": "/en/$1" },
-        { "source": "/ru/(.*)", "destination": "/ru/$1" }
+    "redirects": [
+        {
+            "source": "/en/:path*",
+            "destination": "/en/:path*",
+            "permanent": false
+        },
+        {
+            "source": "/ru/:path*",
+            "destination": "/ru/:path*",
+            "permanent": false
+        },
+        {
+            "source": "/",
+            "destination": "/en/",
+            "permanent": false
+        }
     ]
 }

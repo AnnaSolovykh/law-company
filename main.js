@@ -12,3 +12,4 @@ document.addEventListener('DOMContentLoaded', function() {
     const currentLanguage = window.location.pathname.includes('/ru') ? 'ru' : 'en';
     languageSwitcher.value = currentLanguage;
 });
+
