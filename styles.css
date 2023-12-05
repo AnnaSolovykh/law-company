@@ -102,13 +102,13 @@ body {
     margin: auto;
 }
 
-.mission-content-heading {
+.mission-content h2 {
     font-family: 'Judson', serif;
     color: #B49C73;
     font-size: 2rem;
 }
 
-.mission-content-text {
+.mission-content p {
     font-size: 1rem;
 }
 
