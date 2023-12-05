@@ -46,17 +46,10 @@ body {
 }
 
 #languageSwitcher {
-    background-color: #1E1E1E; 
-    border: 1px solid #ffffff; 
-    margin: 0 20px;
-    padding: 8px 16px; 
-    border-radius: 5px; 
-    font-family: 'Judson', serif; 
-    font-size: 16px; 
-    color: #FFFFFF;
-    cursor: pointer; 
-    outline: none; 
-    -webkit-appearance: none;  
-    -moz-appearance: none;   
-    appearance: none;     
+    cursor: pointer;
+}
+
+#languageSwitcher img {
+    height: 40px; 
+    width: auto;
 }

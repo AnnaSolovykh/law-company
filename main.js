@@ -1,15 +1,22 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const languageSwitcher = document.getElementById('languageSwitcher');
+    const enFlag = document.getElementById('enFlag');
+    const ruFlag = document.getElementById('ruFlag');
+    
+    const currentLanguage = window.location.pathname.includes('/ru') ? 'ru' : 'en';
+    
+    if (currentLanguage === 'en') {
+        ruFlag.style.display = 'block';
+        enFlag.style.display = 'none';
+    } else {
+        enFlag.style.display = 'block';
+        ruFlag.style.display = 'none';
+    }
 
-    languageSwitcher.addEventListener('change', function() {
-        const selectedLanguage = this.value;
-        const currentPath = window.location.pathname;
-
-        const newPath = currentPath.replace(/^\/(en|ru)/, `/${selectedLanguage}`);
-        window.location.href = newPath;
+    enFlag.addEventListener('click', function() {
+        window.location.href = window.location.pathname.replace(/^\/ru/, '/en');
     });
 
-    const currentLanguage = window.location.pathname.includes('/ru') ? 'ru' : 'en';
-    languageSwitcher.value = currentLanguage;
+    ruFlag.addEventListener('click', function() {
+        window.location.href = window.location.pathname.replace(/^\/en/, '/ru');
+    });
 });
-
