@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Jomolhari', serif;
-    line-height: 1; 
+    line-height: 1.5; 
     color: #000000;
     font-size: 1rem;
     background-color: #1E1E1E;
@@ -87,3 +87,39 @@ body {
     font-size: 1.5rem;
     cursor: pointer;
 }
+
+/* main */
+
+/* mission */
+#mission {
+    background-color: #FFFFFF;
+
+}
+
+.mission-content {
+    padding: 20px;
+    width: 90%;
+    margin: auto;
+}
+
+.mission-content-heading {
+    font-family: 'Judson', serif;
+    color: #B49C73;
+    font-size: 2rem;
+}
+
+.mission-content-text {
+    font-size: 1rem;
+}
+
+.values-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.single-value {
+    width: 400px;
+}
+
+
