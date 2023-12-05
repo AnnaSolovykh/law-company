@@ -58,7 +58,7 @@ body {
 }
 
 .hero-background {
-    background-image: url('/assets/pictures/pexels-pavel-danilyuk-hero-bg.jpg');
+    background-image: url('/assets/pictures/pexels-pavel-danilyuk-hero-bg.webp');
     background-size: cover;
     background-position: top;
     height: 95vh;
