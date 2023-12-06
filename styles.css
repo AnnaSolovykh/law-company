@@ -19,6 +19,10 @@ a {
     color: inherit;
 }
 
+a:hover {
+    color: #B49C73; 
+}
+
 /* header */
 
 .navbar {
@@ -67,11 +71,6 @@ a {
     visibility: visible;
     width: 100%;
 }
-
-.navbar-menu a:hover {
-    color: #B49C73; 
-}
-
 
 #languageSwitcher {
     cursor: pointer;
@@ -354,4 +353,8 @@ footer {
 .icon {
     width: 24px; 
     height: auto;
+}
+
+.icon:hover {
+    opacity: 0.7; 
 }
