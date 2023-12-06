@@ -6,7 +6,7 @@ body {
     font-family: 'Jomolhari', serif;
     line-height: 1.5; 
     color: #000000;
-    font-size: 1rem;
+    font-size: 0.9rem;
     background-color: #1E1E1E;
 }
 
@@ -155,10 +155,6 @@ h2 {
     font-size: 2rem;
 }
 
-.mission-content p {
-    font-size: 1rem;
-}
-
 .values-wrapper {
     display: flex;
     justify-content: space-between;
@@ -174,8 +170,8 @@ h2 {
 
 .about-content {
     padding: 20px;
-    width: 90%;
     margin: auto;
+    width: 90%;
 }
 
 #about-info p {
@@ -254,3 +250,55 @@ h2 {
     align-items: center;
 }
 
+/* reasonsToChoose */
+#reasonsToChoose {
+    padding: 20px;
+    margin: auto;
+    width: 80%;
+    position: relative; 
+}
+
+.reasonsToChoose-wrapper {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+}
+
+.reasonsToChoose-image{
+    height: 600px;
+    width: 40%; 
+    position: relative;
+    z-index: 1;
+    margin-right: -5%; 
+    object-fit: cover; 
+}
+
+.reasonsToChoose-text {
+    width: 60%; 
+    background-color: white;
+    padding: 20px;
+    position: relative; 
+    z-index: 2; 
+}
+
+.reasonsToChoose-text h2 {
+    margin: 5px;
+    padding: 0 0 10px 0;
+}
+
+.reasonsToChoose-text .reasonsToChoose-text-item{
+    display: flex;
+}
+
+.reasonsToChoose-text-item h3 {
+    margin: 1px 10px;
+}
+
+.reasonsToChoose-text-item p {
+    margin: 10px;
+}
+.reasonsToChoose-text .reasonsToChoose-text-item img {
+    width: 50px;
+    height: 50px;
+}
