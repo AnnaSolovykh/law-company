@@ -9,7 +9,7 @@
     rotate: 90deg;
 }
 
-.title-wrapper {
+.title-wrapper, .text-wrapper {
     width: 80%; 
     margin: auto; 
 }
@@ -80,4 +80,12 @@
     min-width: 100%;
     min-height: 100%; 
     height: auto;
+}
+
+h2, span {
+    color: #B49C73; 
+}
+
+p {
+    color: white;
 }
