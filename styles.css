@@ -88,6 +88,35 @@ a:hover {
     color: white;
 }
 
+.contact-container-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-areas:
+        "working-days-title working-days-detail"
+        "customer-service-title email"
+        "customer-service-title whatsapp";
+    gap: 10px; 
+    align-items: start; 
+}
+
+.working-days-title { 
+    grid-area: working-days-title; 
+}
+
+.working-days-detail { 
+    grid-area: working-days-detail; 
+    align-self: center; 
+}
+
+.customer-service-title { 
+    grid-area: customer-service-title; 
+    align-self: center; 
+}
+
+.contact-container h3{
+    margin: 0;
+}
+
 footer {
     font-size: 0.7rem;
 }
