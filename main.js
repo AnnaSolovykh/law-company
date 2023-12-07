@@ -80,3 +80,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     updateSlider();
 });
+
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
