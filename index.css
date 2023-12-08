@@ -385,3 +385,50 @@ h2 {
         margin-top: -15%; 
     }
 }
+
+
+/* contacts */
+
+iframe {
+    width: 600px;
+    height: 300px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-auto-rows: minmax(30px, auto); 
+    grid-gap: 3px; 
+    width: 50%; 
+
+}
+
+.icon-row {
+    grid-column: 1; 
+    grid-row: span 2; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-row img {
+    width: 30px; 
+    height: auto; 
+}
+
+.text-row {
+    grid-column: 2;
+    padding: 2px 5px; 
+}
+
+.title {
+    color: #B49C73;
+}
+
+.text-row + .text-row {
+    margin-top: 0; 
+}
+
+.icon-row + .text-row {
+    margin-top: 20px; 
+}
