@@ -6,7 +6,7 @@ body {
     font-family: 'Jomolhari', serif;
     line-height: 1.5; 
     color: #000000;
-    font-size: 0.9rem;
+    font-size: clamp(0.7rem, 2vw, 0.9rem);
     background-color: #1E1E1E;
 }
 
@@ -118,7 +118,7 @@ a:hover {
 }
 
 footer {
-    font-size: 0.7rem;
+    font-size: clamp(0.5rem, 2vw, 0.7rem);
 }
 
 .footer-about {
