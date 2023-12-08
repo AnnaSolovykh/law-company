@@ -1,3 +1,11 @@
+//Navbar
+const burgerIcon = document.querySelector('.burger-icon');
+const navbarMenu =  document.querySelector('.navbar-menu');
+
+burgerIcon.addEventListener('click', () => {
+    burgerIcon.classList.toggle('toggle');
+    navbarMenu.classList.toggle('active');
+});
 
 //Language Switcher
 document.addEventListener('DOMContentLoaded', function() {
