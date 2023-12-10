@@ -364,6 +364,9 @@ h2 {
 }
 
 @media screen and (max-width: 768px) { 
+    .hero-background {
+        height: 80vh;
+    }
     .about-content {
         padding: 10px;
     }
