@@ -81,7 +81,7 @@
     height: auto;
 }
 
-h2, span {
+.text-wrapper span, h2 {
     color: #B49C73; 
 }
 
