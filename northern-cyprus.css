@@ -52,14 +52,28 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 40px;
-    width: 40px;
+    height: 30px;
+    width: 30px;
     border-radius: 50%;
     background-color: rgba(255, 255, 255, 0.7);
     opacity: 0.5;
     transition: ease 0.3s;
     cursor: pointer;
 }
+
+.carousel .controls .control img{
+    height: 15px;
+    width: 15px;
+}
+
+.prev-slide {
+    padding-right: 3px;
+}
+
+.next-slide {
+    padding-left: 3px;
+}
+
 
 .carousel .controls .control:hover {
     opacity: 1;
@@ -102,6 +116,9 @@ p {
         left: 5px; 
         top: 10px; 
         width: 30px;
+    }
+    .carousel .controls {
+        top: 45%;
     }
 }
 
