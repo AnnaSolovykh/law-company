@@ -31,37 +31,37 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-
-
 //Slider
 document.addEventListener('DOMContentLoaded', function() {
     const slider = document.querySelector('.slider');
     let cards = document.querySelectorAll('.card');
     const leftArrow = document.querySelector('.slide-left');
     const rightArrow = document.querySelector('.slide-right');
-    let currentSlide = 0;
+    let currentSlide = 0; 
 
     const updateSlider = () => {
-        const visibleRange = 3;
         cards.forEach((card, index) => {
             const position = index - currentSlide;
-    
-            if (position >= -visibleRange && position <= visibleRange) {
-                card.style.opacity = 1;
-                card.style.transform = `translateX(${100 * position}%)`;
-            } else {
-                card.style.opacity = 0;
-            }
+            card.style.transform = `translateX(${30 * position}%)`;
         });
     };
+    
 
     const moveToNextSlide = () => {
-        currentSlide = (currentSlide + 1) % cards.length;
+        if (currentSlide === cards.length - 1) {
+            currentSlide = 0; 
+        } else {
+            currentSlide++;
+        }
         updateSlider();
     };
-
+    
     const moveToPrevSlide = () => {
-        currentSlide = (currentSlide - 1 + cards.length) % cards.length;
+        if (currentSlide === 0) {
+            currentSlide = cards.length - 1; 
+        } else {
+            currentSlide--; 
+        }
         updateSlider();
     };
 
@@ -70,7 +70,6 @@ document.addEventListener('DOMContentLoaded', function() {
         setTimeout(resetAutoplay, 3000);
     };
     
-
     leftArrow.addEventListener('click', () => {
         moveToPrevSlide();
         pauseAutoplay();
