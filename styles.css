@@ -152,13 +152,13 @@ footer {
         right: 5px; 
     }
     #toTopButton {
-        width: 30px;
+        width: 40px;
     }
     #contactActions {
-        width: 30px;
+        width: 40px;
     }
     .icon {
-        width: 22px; 
+        width: 30px; 
         height: auto;
     }
 }
