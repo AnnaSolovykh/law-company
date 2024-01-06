@@ -11,6 +11,7 @@
 }
 
 .navbar-logo {
+    margin-top: 5px;
     height: 60px; 
 }
 
@@ -21,9 +22,11 @@
 }
 
 .navbar-menu a {
-    font-family: 'Judson', serif;
+    font-family: 'Lora', serif;
+    letter-spacing: 2px;
+    font-weight: 200;
     color: #FFFFFF;
-    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-size: clamp(1rem, 2vw, 1.2rem);
     margin: 0 20px;
     position: relative;
     display: inline-block; 
@@ -53,6 +56,7 @@
 }
 
 .burger-icon {
+    margin-top: -7px;
     display: none;
     cursor: pointer;
     position: relative;
@@ -61,8 +65,8 @@
 .burger-icon .line {
     width: 25px;
     height: 3px;
-    background-color: white;
-    margin: 6px 0;
+    background-color: #B49C73; 
+    margin: 8px 0;
     transition: all 0.3s ease;
 }
 
@@ -90,7 +94,7 @@
     }
 
     .navbar-menu.active  a {
-        font-size: 1.2rem;
+        font-size: 0.8rem;
     }
 
     .burger-icon {
@@ -114,7 +118,7 @@
     } 
     
     .burger-icon.toggle .line:nth-child(1) {
-        transform: rotate(45deg) translate(6px, 7px);
+        transform: rotate(45deg) translate(8px, 10px);
     }
     
     .burger-icon.toggle .line:nth-child(2) {
@@ -154,34 +158,63 @@
 }
 
 .hero-background {
-    background-image: url('/assets/pictures/pexels-pavel-danilyuk-hero-bg.webp');
-    background-size: cover;
-    background-position: top;
-    height: 95vh;
+    position: relative; 
     display: flex;
-    align-items: flex-end; 
+    align-items: flex-end;
     justify-content: center;
+    height: 95vh;
+}
+
+.hero-background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('/assets/pictures/pexels-pavel-danilyuk-hero-bg-cropped.jpg');
+    background-size: cover;
+    background-position: right top;
+    opacity: 0.5; 
+    z-index: -1;
 }
 
 .hero-content {
     text-align: left;
     width: 100%;
-    padding-left: 5%; 
+    padding-left: 5%;
+    z-index: 1;
 }
 
 .hero-title {
+    font-family: 'Lora', serif;
+    letter-spacing: 4px;
     color: white;
-    font-size: clamp(1.5rem, 2vw, 2rem);
+    font-size: clamp(1.4rem, 2vw, 2rem);
 }
 
-.hero-title span {
+.hero-title .hero-title-line-two {
+    font-family: 'Lora', serif;
+    font-weight: 200;
+    letter-spacing: 3px;
     color: white;
-    font-size: clamp(1rem, 2vw, 2rem);
+    font-size: clamp(1.1rem, 2vw, 1.6rem);
+}
+
+.hero-title .hero-title-line-three {
+    font-family: 'Lora', serif;
+    font-weight: 200;
+    letter-spacing: 3px;
+    color: white;
+    font-size: clamp(1rem, 2vw, 1.5rem);
 }
 
 .hero-button {
     margin: 250px 0 100px 0;
+    font-family: 'Lora', serif;
+    letter-spacing: 1px;
     background-color: #B49C73;
+    background-repeat: no-repeat; 
     border-radius: 3px;
     color: white;    
     border: none;
@@ -195,6 +228,38 @@
     background-color: #1E1E1E;
     color: #B49C73;
 }
+
+@media screen and (max-width: 800px) {
+    .hero-background {
+        height: 60vh;
+    }
+    .hero-background::before {
+        background-image: url('/assets/pictures/pexels-pavel-danilyuk-hero-bg-cropped-woman.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .hero-button {
+        margin: 200px 0 70px 0;
+    }
+    .hero-title {
+        line-height: 1.7;
+    }
+}
+@media screen and (max-width: 630px) {
+    .hero-content {
+        padding-left: 10%;
+    }
+    .hero-background {
+        height: 80vh; 
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .hero-button {
+        margin: 150px 0 60px 0;
+    }
+}
+
 
 /* main */
 
@@ -210,7 +275,7 @@
 }
 
 h2 {
-    font-family: 'Judson', serif;
+    font-family: 'Lora', serif;
     color: #B49C73;
     font-size: 2rem;
 }
