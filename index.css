@@ -180,43 +180,43 @@
 }
 
 .hero-content {
+    font-family: 'Lora', serif;
     text-align: left;
     width: 100%;
     padding-left: 5%;
     z-index: 1;
 }
 
-.hero-title {
-    font-family: 'Lora', serif;
-    letter-spacing: 4px;
+.hero-title-line-one  {
     color: white;
+    letter-spacing: 5px;
+    line-height: 0.4;
     font-size: clamp(1.4rem, 2vw, 2rem);
 }
 
-.hero-title .hero-title-line-two {
-    font-family: 'Lora', serif;
+.hero-title-line-two {
+    color: white;
     font-weight: 200;
     letter-spacing: 3px;
-    color: white;
     font-size: clamp(1.1rem, 2vw, 1.6rem);
 }
 
-.hero-title .hero-title-line-three {
-    font-family: 'Lora', serif;
+.hero-title-line-three {
+    color: white;
     font-weight: 200;
     letter-spacing: 3px;
-    color: white;
+    line-height: 2;
     font-size: clamp(1rem, 2vw, 1.5rem);
 }
 
 .hero-button {
     margin: 250px 0 100px 0;
-    font-family: 'Lora', serif;
     letter-spacing: 1px;
+    color: white;
+    font-family: 'Lora', serif;
     background-color: #B49C73;
     background-repeat: no-repeat; 
-    border-radius: 3px;
-    color: white;    
+    border-radius: 3px; 
     border: none;
     padding: 15px 25px;
     font-size: clamp(1rem, 2vw, 1.5rem);
@@ -247,7 +247,7 @@
 }
 @media screen and (max-width: 630px) {
     .hero-content {
-        padding-left: 10%;
+        padding-left: 7%;
     }
     .hero-background {
         height: 80vh; 
