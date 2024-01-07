@@ -4,8 +4,19 @@ const navbarMenu =  document.querySelector('.navbar-menu');
 
 burgerIcon.addEventListener('click', () => {
     burgerIcon.classList.toggle('toggle');
-    navbarMenu.classList.toggle('active');
+    if (navbarMenu.classList.contains('active')) {
+        navbarMenu.classList.remove('active');
+        setTimeout(() => {
+            navbarMenu.style.display = 'none';
+        }, 500); 
+    } else {
+        navbarMenu.style.display = 'flex';
+        requestAnimationFrame(() => {
+            navbarMenu.classList.add('active');
+        });
+    }
 });
+
 
 //Language Switcher
 document.addEventListener('DOMContentLoaded', function() {
