@@ -89,6 +89,15 @@ a:hover {
     color: #B49C73; 
 }
 
+.navbar-menu a.active::after {
+    visibility: visible;
+    width: 100%;
+}
+
+.navbar-menu a.active {
+    color: #B49C73;
+}
+
 .burger-icon {
     margin-top: -7px;
     display: none;
