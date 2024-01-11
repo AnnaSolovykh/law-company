@@ -343,3 +343,60 @@ iframe {
         padding-top: 50px;
     }
 }
+
+hr {
+    border: 1px solid #B49C73; 
+    border-radius: 3px;
+    height: 2px; 
+}
+
+.links-content {
+    padding: 20px;
+    width: 90%;
+    margin: auto;
+}
+
+.links-content p {
+    color: #FFFFFF;
+}
+
+.links-content div {
+    line-height: 0.7;
+    display: flex;
+    align-items: center;
+}
+
+.links-content div p {
+    flex: 2;
+}
+
+.links-content div a {
+    font-style: italic;
+    color: #1c7dbe;
+    flex: 4;
+}
+
+.links-content div a:hover {
+    font-style: italic;
+    color: #3b86b9;
+}
+
+@media screen and (min-width: 1600px) { 
+    .links-content div p {
+        flex: 1;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) { 
+    .links-content div {
+        line-height: 0.1;
+    }
+}
+
+@media screen and (max-width: 1024px) { 
+    .links-content div{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
