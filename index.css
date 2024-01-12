@@ -381,6 +381,10 @@ hr {
     color: #3b86b9;
 }
 
+.links-content-mobile {
+    display: none;
+}
+
 @media screen and (min-width: 1600px) { 
     .links-content div p {
         flex: 1;
@@ -398,5 +402,28 @@ hr {
     .links-content div{
         flex-direction: column;
         align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 576px) { 
+    .links-content {
+        display: none;
+    }
+    .links-content-mobile {
+        display: block;
+        padding: 20px;
+        width: 90%;
+        margin: auto;
+    }
+    .links-content-mobile div {
+        display: flex;
+        flex-direction: column;
+    }
+    .links-content-mobile p {
+        color: #FFFFFF;
+    }
+    .links-content-mobile a {
+        font-style: italic;
+        color: #379DE1;
     }
 }
