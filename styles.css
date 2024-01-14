@@ -293,8 +293,8 @@ footer {
 }
 
 .footer-logo {
-    width: 40px;
-    height: 40px;
+    width: 10rem;
+    height: auto;
 }
 
 .contact-container {
@@ -315,6 +315,10 @@ footer {
 @media (max-width: 768px) {
     .footer-nav {
         width: 100px;
+    }
+    .footer-logo {
+        width: 7rem;
+        height: auto;
     }
     .hide {
         display: none;
