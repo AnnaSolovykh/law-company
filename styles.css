@@ -277,7 +277,7 @@ a:hover {
 }
 
 footer {
-    font-size: clamp(0.5rem, 2vw, 0.7rem);
+    font-size: clamp(0.6rem, 2vw, 0.8rem);
 }
 
 .footer-about {
@@ -325,16 +325,21 @@ footer {
         width: 5rem;
         height: auto;
     }
+    .footer-nav {
+        align-items: end;
+        flex-direction: column;
+        justify-content: center;
+    }
     .footer-nav a{
         margin: 0 5px;
     }
     .contactActions-wrapper {
-        bottom: 100px; 
+        bottom: 150px; 
         right: 5px; 
     }
     .toTopButton-wrapper {
         right: 5px; 
-        margin-bottom: 30px;
+        margin-bottom: 80px;
     }
     #toTopButton {
         width: 40px;
@@ -348,5 +353,51 @@ footer {
     }
     .contact-container {
         margin-left: 10px;
+    }
+}
+
+.creator-wrapper {
+    display: flex;
+    justify-content: center;
+    color: #B49C73;
+    letter-spacing: 2px;
+}
+
+.creator-wrapper a {
+    color: #B49C73;
+    position: relative;
+    display: inline-block; 
+    transition: all 0.5s ease-in-out;
+}
+
+.creator-wrapper a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0.5px; 
+    bottom: -3px;
+    left: 0;
+    background-color: #FFFFFF; 
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.creator-wrapper a:hover::after {
+    visibility: visible;
+    width: 100%;
+}
+
+.creator-wrapper a:hover {
+    color: #FFFFFF;
+}
+
+.creator-wrapper a.active::after {
+    visibility: visible;
+    width: 100%;
+}
+
+@media (max-width: 768px) { 
+    .creator-wrapper a {
+        color: #b4ab9a;
     }
 }
