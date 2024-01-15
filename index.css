@@ -280,7 +280,7 @@ h2 {
 .card a:hover {
     color: #B49C73;
 }
-
+/* 
 .card a::after {
     content: '';
     position: absolute;
@@ -302,7 +302,7 @@ h2 {
     .card a:hover::after {
         visibility: hidden;
     }
-}
+} */
 
 /* reasonsToChoose */
 #reasonsToChoose {
