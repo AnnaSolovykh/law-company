@@ -41,6 +41,7 @@
 @media (max-width: 768px) { 
     .practice-area-wrapper {
         flex-direction: column-reverse;
+        margin: 0 0 3rem 0;
     }
     .practice-area-wrapper img{
         width: 100%;

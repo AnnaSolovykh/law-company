@@ -293,7 +293,7 @@ a:hover {
 }
 
 footer {
-    font-size: clamp(0.6rem, 2vw, 0.8rem);
+    font-size: clamp(0.65rem, 2vw, 0.8rem);
 }
 
 .footer-about {
