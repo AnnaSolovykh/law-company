@@ -360,7 +360,7 @@ footer {
     display: flex;
     justify-content: center;
     color: #B49C73;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 .creator-wrapper a {
@@ -397,6 +397,9 @@ footer {
 }
 
 @media (max-width: 768px) { 
+    .creator-wrapper {
+        letter-spacing: 1px;
+    }
     .creator-wrapper a {
         color: #b4ab9a;
     }
