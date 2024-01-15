@@ -1,61 +1,59 @@
-//Slider
-document.addEventListener('DOMContentLoaded', function() {
-    const slider = document.querySelector('.slider');
-    let cards = document.querySelectorAll('.card');
-    const leftArrow = document.querySelector('.slide-left');
-    const rightArrow = document.querySelector('.slide-right');
-    let currentSlide = 0; 
-
-    const updateSlider = () => {
-        cards.forEach((card, index) => {
-            const position = index - currentSlide;
-            card.style.transform = `translateX(${30 * position}%)`;
-        });
-    };
-    
-
-    const moveToNextSlide = () => {
-        if (currentSlide === cards.length - 1) {
-            currentSlide = 0; 
-        } else {
-            currentSlide++;
-        }
-        updateSlider();
-    };
-    
-    const moveToPrevSlide = () => {
-        if (currentSlide === 0) {
-            currentSlide = cards.length - 1; 
-        } else {
-            currentSlide--; 
-        }
-        updateSlider();
-    };
-
-    const pauseAutoplay = () => {
-        clearInterval(autoplayInterval);
-        setTimeout(resetAutoplay, 3000);
-    };
-    
-    leftArrow.addEventListener('click', () => {
-        moveToPrevSlide();
-        pauseAutoplay();
-    });
-
-    rightArrow.addEventListener('click', () => {
-        moveToNextSlide();
-        pauseAutoplay();
-    });
-
-    let autoplayInterval = setInterval(moveToNextSlide, 3000);
-
-    const resetAutoplay = () => {
-        clearInterval(autoplayInterval);
-        autoplayInterval = setInterval(moveToNextSlide, 3000);
-    };
-    
-    slider.addEventListener('mouseenter', () => clearInterval(autoplayInterval));
-    slider.addEventListener('mouseleave', resetAutoplay);
-
-    updateSlider();
-});
+const swiper = new Swiper(".swiper-slider", {
+    centeredSlides: true,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    grabCursor: true,
+    freeMode: false,
+    loop: true,
+    mousewheel: false,
+    keyboard: {
+      enabled: true
+    },
+  
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: true
+    },
+  
+    pagination: {
+      el: ".swiper-pagination",
+      dynamicBullets: false,
+      clickable: true
+    },
+  
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    },
+  
+    breakpoints: {
+      421: {
+        slidesPerView: 1.25,
+        spaceBetween: 20
+      },
+      500: {
+        slidesPerView: 1.5,
+        spaceBetween: 20
+      },
+      600: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      1024: {
+        slidesPerView: 2.5,
+        spaceBetween: 20
+      },
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 20
+      },
+      1350: {
+        slidesPerView: 3.5,
+        spaceBetween: 20
+      },
+      1500: {
+        slidesPerView: 4,
+        spaceBetween: 20
+      }
+    }
+  });
