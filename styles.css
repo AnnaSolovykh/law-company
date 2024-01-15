@@ -204,6 +204,20 @@ a:hover {
     display: none;
 }
 
+/* header */
+
+.text-wrapper, .title-wrapper  {
+    width: 80%; 
+    margin: auto; 
+}
+
+.title-wrapper h1 {
+    font-family: 'Lora', serif;
+    letter-spacing: 1px;
+    font-weight: 200;
+    color: #B49C73;
+}
+
 /* contacts; footer */
 
 .contactActions-wrapper {

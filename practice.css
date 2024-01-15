@@ -1,0 +1,39 @@
+.practice-area-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+.practice-area-wrapper img{
+    width: 18rem;
+    height: auto;
+}
+
+.practice-area-text-wrapper {
+    width: 40%;
+}
+
+.practice-area-text-wrapper h2{
+    color: #B49C73;
+}
+
+.practice-area-text-wrapper p {
+    color: #FFFFFF;
+}
+
+.practice-area-text-wrapper ul {
+    list-style-type: none; 
+}
+
+.practice-area-text-wrapper li{
+    color: #FFFFFF;
+    line-height: 1.2;
+}
+
+.practice-area-text-wrapper ul li::before {
+    content: '\2022'; 
+    color: #B49C73; 
+    font-size: 20px;
+    margin-right: 10px; 
+}
