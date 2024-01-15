@@ -394,4 +394,7 @@ footer {
     .creator-wrapper {
         letter-spacing: 1px;
     }
+    .creator-wrapper a:hover::after {
+        visibility: hidden;
+    }
 }
