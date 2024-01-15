@@ -274,11 +274,11 @@ h2 {
     position: relative;
     display: inline-block;
     margin-bottom: 1rem; 
+    transition: all 0.3s ease-in-out;
 }
 
 .card a:hover {
     color: #B49C73;
-    transition: all 0.3s ease-in-out;
 }
 
 .card a::after {
@@ -503,7 +503,6 @@ hr {
     .links-content div p {
         flex: 1;
     }
-    
 }
 
 @media screen and (min-width: 1024px) { 
