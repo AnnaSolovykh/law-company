@@ -351,12 +351,12 @@ footer {
         margin: 0 5px;
     }
     .contactActions-wrapper {
-        bottom: 150px; 
+        bottom: 70px; 
         right: 5px; 
     }
     .toTopButton-wrapper {
         right: 5px; 
-        margin-bottom: 80px;
+        bottom: 10px;
     }
     #toTopButton {
         width: 40px;
