@@ -37,3 +37,16 @@
     font-size: 20px;
     margin-right: 10px; 
 }
+
+@media (max-width: 768px) { 
+    .practice-area-wrapper {
+        flex-direction: column;
+    }
+    .practice-area-wrapper img{
+        width: 100%;
+    }
+    
+    .practice-area-text-wrapper {
+        width: 100%;
+    }
+}
