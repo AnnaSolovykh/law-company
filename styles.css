@@ -28,6 +28,7 @@ a {
 
 a:hover {
     color: #B49C73; 
+    transition: all 0.3s ease-in-out;
 }
 
 /* navbar */
@@ -214,8 +215,8 @@ a:hover {
 }
 
 #contactActions {
-    transition: transform 0.3s, opacity 0.3s; 
-    animation: pulse 3s infinite; 
+    transition: all 0.3s ease-in-out, opacity 0.3s; 
+    animation: pulse 2.5s infinite; 
 }
 
 @keyframes pulse {
@@ -235,7 +236,7 @@ a:hover {
 
 #contactActions:hover {
     animation: none;
-    transform: scale(1.1); 
+    transform: scale(1.2); 
 }
 
 
@@ -254,6 +255,7 @@ a:hover {
 
 #toTopButton:hover {
     opacity: 0.7;
+    transition: all 0.3s ease-in-out;
 }
 
 #contact, footer {
@@ -294,7 +296,7 @@ footer {
     align-items: center;
 }
 
-.footer-nav a{
+.footer-nav a {
     margin: 0 20px;
 }
 
@@ -318,6 +320,7 @@ footer {
 
 .icon:hover {
     opacity: 0.7; 
+    transition: all 0.3s ease-in-out;
 }
 
 @media (max-width: 768px) {
@@ -359,12 +362,15 @@ footer {
 .creator-wrapper {
     display: flex;
     justify-content: center;
-    color: #B49C73;
     letter-spacing: 1px;
 }
 
-.creator-wrapper a {
+.creator-wrapper p {
     color: #B49C73;
+}
+
+.creator-wrapper a {
+    color: #b4ab9a;
     position: relative;
     display: inline-block; 
     transition: all 0.5s ease-in-out;
@@ -399,8 +405,5 @@ footer {
 @media (max-width: 768px) { 
     .creator-wrapper {
         letter-spacing: 1px;
-    }
-    .creator-wrapper a {
-        color: #b4ab9a;
     }
 }

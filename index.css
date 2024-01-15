@@ -64,7 +64,7 @@
     padding: 15px 25px;
     font-size: clamp(1rem, 2vw, 1.5rem);
     cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease; 
+    transition: background-color 0.3s ease-in-out, color 0.3s ease; 
 }
 
 .hero-button:hover {
@@ -139,6 +139,16 @@ h2 {
 #about-info p {
     color: white;
 }
+
+#about-info a{
+    color: #1c7dbe;
+}
+
+#about-info a:hover {
+    color: #379DE1;
+    transition: all 0.3s ease-in-out;
+}
+
 
 /* practice */
 
@@ -338,11 +348,12 @@ iframe {
 .text-row a { 
     font-style: italic;
     color: #1c7dbe;
+    transition: all 0.3s ease-in-out;
 }
 
 
-.text-row a :hover {
-    color: #3b86b9;
+.text-row a:hover {
+    color: #3b86b9;;
 }
 
 @media (max-width: 820px) {
@@ -395,10 +406,10 @@ hr {
     font-style: italic;
     color: #1c7dbe;
     flex: 4;
+    transition: all 0.3s ease-in-out;
 }
 
 .links-content div a:hover {
-    font-style: italic;
     color: #3b86b9;
 }
 
