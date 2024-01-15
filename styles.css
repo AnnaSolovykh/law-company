@@ -320,32 +320,13 @@ footer {
     vertical-align: middle;
 }
 
-.contact-container {
-    display: flex;
-    align-items: center; 
-    gap: 10px; 
-}
-
-.icon {
-    width: 24px; 
-    height: auto;
-    vertical-align: middle;
-}
-
-.icon:hover {
-    opacity: 0.7; 
-    transition: all 0.3s ease-in-out;
-}
-
 @media (max-width: 768px) {
     .footer-logo {
         width: 5rem;
         height: auto;
     }
     .footer-nav {
-        align-items: end;
-        flex-direction: column;
-        justify-content: center;
+        margin-right: 5px;
     }
     .footer-nav a{
         margin: 0 5px;
@@ -363,13 +344,6 @@ footer {
     }
     #contactActions {
         width: 40px;
-    }
-    .icon {
-        width: 25px; 
-        height: auto;
-    }
-    .contact-container {
-        margin-left: 10px;
     }
 }
 
