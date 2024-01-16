@@ -152,70 +152,25 @@ h2 {
 
 /* practice */
 
-/* .slider-controls-wrapper {
-    background-color: #B49C73; 
-    height: 25vh;
-}
-
-.slider-controls {
-    padding: 30px; 
-    display: flex;
-    justify-content: center; 
-}
-
-.slider-controls img {
-    cursor: pointer; 
-    width: 3rem;
-    transition: opacity 0.3s ease; 
-}
-
-.slider-controls img:hover {
-    opacity: 0.7; 
-} */
-
-/* .slider {
-    display: flex;
-    justify-content: center; 
-    overflow: hidden;
-    margin-top: -8%;
-    position: relative; 
-    z-index: 2; 
-    transition: transform 0.5s ease;
-    width: 100%;
-}  */
-
-/* .white-bg {
-    width: 100%;
-    height: 50%; 
-    background-color: #FFFFFF;
-    position: absolute; 
-    bottom: 0; 
-    z-index: -1; 
-} */
-
-
 /* .container {
     max-width: 90rem;
     height: auto;
     margin-inline: auto;
     padding-inline: 1.25rem;
-} */
+}    */
 
-/* .swiper {
-    &-button-next::after,
-    &-button-prev::after {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 0.75rem;
-        font-weight: 800;
-        padding: 1rem;
-        width: 2rem;
-        height: 2rem;
-        opacity: 0.75;
-        border-radius: 50%;
-    }
-}  */
+.bg-wrapper {
+    background-color: #B49C73; 
+    height: 25vh;
+}
+
+.swiper {
+    overflow: hidden;
+    margin-top: -9%;
+    position: relative; 
+    z-index: 2; 
+    width: 100%;
+}
 
 .swiper-slide {
     display: block;
