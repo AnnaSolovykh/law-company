@@ -21,11 +21,6 @@ const swiper = new Swiper(".swiper-slider", {
       clickable: true
     },
   
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
-    },
-  
     breakpoints: {
       357: {
         slidesPerView: 1.25,
