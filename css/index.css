@@ -120,7 +120,7 @@
         background-image: url('/assets/pictures/pexels-pavel-danilyuk-hero-bg-cropped-woman.webp');
         background-size: cover;
         background-repeat: no-repeat;
-        /* background-position: center; */
+        background-position: right; 
     }
     .hero-content-text {
         top: 50%;
@@ -175,6 +175,12 @@
         margin-left: 20px;
         font-size: 1.2rem;
     }
+}
+
+@media screen and (min-width:390px) and (max-width: 430px) {
+    .hero-background::before {
+        background-position:  80% 20%; 
+    }    
 }
 
 /* main */
