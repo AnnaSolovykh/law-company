@@ -203,7 +203,7 @@
 }
 
 .single-value {
-    width: 300px;
+    width: 400px;
     margin: 0 5px;
 }
 
@@ -229,14 +229,10 @@
 }
 
 @media screen and (max-width: 769px) {
- 
+    .single-value {
+        width: 100%;
+    }
 }
-
-@media screen and (max-width: 481px) {
-
-}
-
-
 
 /* about */
 
