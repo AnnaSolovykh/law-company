@@ -190,6 +190,10 @@
     color: #1c7dbe;
 }
 
+#about-info span {
+    color: #B49C73;
+}
+
 #about-info a:hover {
     color: #379DE1;
     transition: all 0.3s ease-in-out;
