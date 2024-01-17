@@ -299,7 +299,7 @@ h2 {
 }
 
 footer {
-    font-size: clamp(0.65rem, 2vw, 0.8rem);
+    font-size: clamp(0.7rem, 2vw, 0.8rem);
 }
 
 .footer-about {
@@ -328,7 +328,7 @@ footer {
 
 @media (max-width: 768px) {
     .footer-logo {
-        width: 5rem;
+        width: 5.5rem;
         height: auto;
     }
     .footer-nav {
@@ -357,6 +357,7 @@ footer {
     display: flex;
     justify-content: center;
     letter-spacing: 1px;
+    font-size: 0.6rem;
 }
 
 .creator-wrapper p {

@@ -539,6 +539,16 @@ iframe {
     color: #3b86b9;;
 }
 
+@media (max-width: 1300px) {
+    .grid-container {
+        grid-auto-rows: 2cqmax;
+        grid-gap: 20px 10px; 
+        width: 100%; 
+    }
+
+}
+
+
 @media (max-width: 820px) {
     .grid-container {
         grid-auto-rows: 30px;
@@ -557,6 +567,13 @@ iframe {
     }
 }
 
+@media (max-width: 400px) {
+    .grid-container {
+        grid-auto-rows: 30px;
+        grid-gap: 20px 25px; 
+        width: 100%; 
+    }
+}
 /* links */
 
 hr {
