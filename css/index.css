@@ -5,7 +5,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    height: 95vh;
+    height: 92vh;
 }
 
 .hero-background::before {
@@ -28,20 +28,28 @@
     width: 100%;
     padding-left: 5%;
     z-index: 1;
+
+    height: 100%;
+    position: relative;
+}
+
+.hero-content-text {
+    top: 40%;
+    position: absolute;
 }
 
 .hero-title-line-one  {
     color: white;
     letter-spacing: 5px;
     line-height: 0.4;
-    font-size: clamp(1.6rem, 2vw, 2.5rem);
+    font-size: 2.5rem;
 }
 
 .hero-title-line-two {
     color: white;
     font-weight: 200;
     letter-spacing: 3px;
-    font-size: clamp(1.2rem, 2vw, 2rem);
+    font-size: 2rem;
 }
 
 .hero-title-line-three {
@@ -49,11 +57,12 @@
     font-weight: 200;
     letter-spacing: 3px;
     line-height: 2;
-    font-size: clamp(1rem, 2vw, 1.7rem);
+    font-size: 1.7rem;
 }
 
 .hero-button {
-    margin: 250px 0 100px 0;
+    top: 82%;
+    position: absolute;
     letter-spacing: 1px;
     color: white;
     font-family: 'Lora', serif;
@@ -88,7 +97,7 @@
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (max-width: 992px) {
     .hero-title-line-one  {
         font-size: 2.5rem;
     }
@@ -111,10 +120,25 @@
         background-image: url('/assets/pictures/pexels-pavel-danilyuk-hero-bg-cropped-woman.webp');
         background-size: cover;
         background-repeat: no-repeat;
+        /* background-position: center; */
+    }
+    .hero-content-text {
+        top: 50%;
     }
     .hero-button {
-        margin: clamp(90px, 18vh, 250px) 0 40px 0; 
+        top: 87%;
+        font-size: 1.3rem;
     }    
+    .hero-title-line-one  {
+        font-size: 2.4rem;
+    }
+    .hero-title-line-two {
+        font-size: 1.5rem;
+    }
+    .hero-title-line-three {
+        font-size: 1.3rem;
+        line-height: 1;
+    }
 }
 
 @media screen and (max-width: 481px) {
@@ -128,6 +152,7 @@
         padding-left: 0;
     }
     .hero-content-text {
+        top: 47%;
         width: 100%;
         padding: 10px;
         position: relative;
@@ -135,17 +160,20 @@
     }
     .hero-title-line-one  {
         margin-left: 10px;
+        font-size: 1.8rem;
     }
     .hero-title-line-two {
         margin-left: 10px;
+        font-size: 1.2rem;
     }
     .hero-title-line-three {
-        line-height: 1;
         margin-left: 10px;
+        font-size: 1.1rem;
     }
     .hero-button {
+        top: 85%;
         margin-left: 20px;
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 }
 
