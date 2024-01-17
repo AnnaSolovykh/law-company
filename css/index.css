@@ -106,11 +106,12 @@
 @media screen and (max-width: 769px) {
     .hero-background {
         height: 60vh;
-    }
+    } 
     .hero-background::before {
         background-image: url('/assets/pictures/pexels-pavel-danilyuk-hero-bg-cropped-woman.webp');
         background-size: cover;
         background-repeat: no-repeat;
+        height: 100vh;
     }
     .hero-button {
         margin: clamp(90px, 18vh, 250px) 0 40px 0; 
@@ -120,6 +121,7 @@
 @media screen and (max-width: 481px) {
     .hero-background::before {
         opacity: 1;
+        height: 100vh;
     }
     .hero-content {
         padding-left: 0;
