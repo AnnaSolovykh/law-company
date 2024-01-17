@@ -118,9 +118,6 @@
 }
 
 @media screen and (max-width: 481px) {
-    .hero-background {
-        height: 80vh; 
-    }
     .hero-background::before {
         opacity: 1;
     }
