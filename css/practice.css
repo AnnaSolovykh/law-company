@@ -15,6 +15,7 @@
 }
 
 .practice-area-text-wrapper h2{
+    font-size: clamp(1.5rem, 2vw, 1.7rem);
     color: #B49C73;
 }
 
