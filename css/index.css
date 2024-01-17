@@ -34,14 +34,14 @@
     color: white;
     letter-spacing: 5px;
     line-height: 0.4;
-    font-size: clamp(1.4rem, 2vw, 2rem);
+    font-size: clamp(1.6rem, 2vw, 2.5rem);
 }
 
 .hero-title-line-two {
     color: white;
     font-weight: 200;
     letter-spacing: 3px;
-    font-size: clamp(1.1rem, 2vw, 1.6rem);
+    font-size: clamp(1.2rem, 2vw, 2rem);
 }
 
 .hero-title-line-three {
@@ -49,7 +49,7 @@
     font-weight: 200;
     letter-spacing: 3px;
     line-height: 2;
-    font-size: clamp(1rem, 2vw, 1.5rem);
+    font-size: clamp(1rem, 2vw, 1.7rem);
 }
 
 .hero-button {
@@ -72,7 +72,38 @@
     color: #B49C73;
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 993px) {
+    .hero-title-line-one  {
+        font-size: 2.5rem;
+    }
+    .hero-title-line-two {
+        font-size: 2rem;
+    }
+    
+    .hero-title-line-three {
+        font-size: 1.7rem;
+    }
+    .hero-button {
+        font-size: 1.5rem;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .hero-title-line-one  {
+        font-size: 2.5rem;
+    }
+    .hero-title-line-two {
+        font-size: 1.7rem;
+    }
+    .hero-title-line-three {
+        font-size: 1.5rem;
+    }
+    .hero-button {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 769px) {
     .hero-background {
         height: 60vh;
     }
@@ -84,16 +115,37 @@
     .hero-button {
         margin: clamp(90px, 18vh, 250px) 0 40px 0; 
     }    
-    .hero-title {
-        line-height: 1.7;
-    }
 }
+
 @media screen and (max-width: 481px) {
-    .hero-content {
-        padding-left: 7%;
-    }
     .hero-background {
         height: 80vh; 
+    }
+    .hero-background::before {
+        opacity: 1;
+    }
+    .hero-content {
+        padding-left: 0;
+    }
+    .hero-content-text {
+        width: 100%;
+        padding: 10px;
+        position: relative;
+        background: rgba(0, 0, 0, 0.334); 
+    }
+    .hero-title-line-one  {
+        margin-left: 10px;
+    }
+    .hero-title-line-two {
+        margin-left: 10px;
+    }
+    .hero-title-line-three {
+        line-height: 1;
+        margin-left: 10px;
+    }
+    .hero-button {
+        margin-left: 20px;
+        font-size: 1rem;
     }
 }
 
@@ -108,12 +160,6 @@
     padding: 20px;
     width: 90%;
     margin: auto;
-}
-
-h2 {
-    font-family: 'Lora', serif;
-    color: #B49C73;
-    font-size: 2rem;
 }
 
 .values-wrapper {
