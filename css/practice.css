@@ -70,4 +70,13 @@
     .practice-area-text-wrapper {
         width: 100%;
     }
+    .practice-area-text-wrapper a {
+        bottom: 10px;
+    }
+    .practice-area-text-wrapper a::after {
+    display: none;
+    }  
+    .practice-area-text-wrapper a:hover::after {
+        visibility: hidden;
+    }
 }
