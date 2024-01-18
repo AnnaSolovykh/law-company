@@ -247,7 +247,7 @@
 }
 
 #about-info a{
-    color: #1c7dbe;
+    color: #379DE1;
 }
 
 #about-info span {
@@ -255,19 +255,11 @@
 }
 
 #about-info a:hover {
-    color: #379DE1;
+    color: #1c7dbe;
     transition: all 0.3s ease-in-out;
 }
 
-
 /* practice */
-
-/* .container {
-    max-width: 90rem;
-    height: auto;
-    margin-inline: auto;
-    padding-inline: 1.25rem;
-}     */
 
 .bg-wrapper {
     background-color: #B49C73; 
@@ -362,6 +354,7 @@
 }
 
 .card a {
+    color: #379DE1;
     max-height: 0.5rem;
     font-family: 'Lora', serif;
     font-size: 1rem;
@@ -375,7 +368,7 @@
 }
 
 .card a:hover {
-    color: #B49C73;
+    color: #1c7dbe;
 }
 
 .card a::after {
@@ -385,7 +378,7 @@
     height: 1.5px; 
     bottom: -16px;
     left: 0;
-    background-color: #B49C73; 
+    background-color: #1c7dbe; 
     visibility: hidden;
     transition: all 0.3s ease-in-out;
 }
@@ -526,13 +519,13 @@ iframe {
 
 .text-row a { 
     font-style: italic;
-    color: #1c7dbe;
+    color: #3b86b9;
     transition: all 0.3s ease-in-out;
 }
 
 
 .text-row a:hover {
-    color: #3b86b9;;
+    color: #1c7dbe;
 }
 
 @media (max-width: 1300px) {
@@ -600,13 +593,13 @@ hr {
 
 .links-content div a {
     font-style: italic;
-    color: #1c7dbe;
+    color: #3b86b9;
     flex: 4;
     transition: all 0.3s ease-in-out;
 }
 
 .links-content div a:hover {
-    color: #3b86b9;
+    color: #1c7dbe;
 }
 
 .links-content-mobile {
