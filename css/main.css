@@ -241,7 +241,7 @@ h2 {
 
 .text-wrapper ul {
     list-style-type: none; 
-    padding-left: 0; 
+    padding-left: 10px;
 }
 
 .text-wrapper ul li {
@@ -257,6 +257,27 @@ h2 {
     left: 0; 
     top: -4px; 
 }
+
+.text-wrapper ol {
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+.text-wrapper ol li {
+    position: relative;
+    padding-left: 30px;
+    counter-increment: item; 
+}
+
+.text-wrapper ol li::before {
+    content: counter(item) '. ';
+    color: #B49C73;
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    top: -4px; 
+}
+
 
 @media (max-width: 768px) { 
     .title-wrapper h1 {
