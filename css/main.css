@@ -225,27 +225,43 @@ h2 {
     color: #B49C73;
 }
 
-.text-wrapper h3 {
+.text-wrapper h2 {
     font-family: 'Lora', serif;
+    font-size: clamp(1.2rem, 2vw, 1.4rem);
     letter-spacing: 1px;
     color :#B49C73;
 }
 
-.text-wrapper  h4 {
+.text-wrapper h3 {
     font-family: 'Lora', serif;
+    font-size: clamp(1.1rem, 2vw, 1.2rem);
     letter-spacing: 1px;
     color :#B49C73;
 }
 
 .text-wrapper ul {
     list-style-type: none; 
+    padding-left: 0; 
+}
+
+.text-wrapper ul li {
+    position: relative;
+    padding-left: 20px; 
 }
 
 .text-wrapper ul li::before {
     content: '\2022'; 
     color: #B49C73; 
     font-size: 20px;
-    margin-right: 10px; 
+    position: absolute;
+    left: 0; 
+    top: -4px; 
+}
+
+@media (max-width: 768px) { 
+    .title-wrapper h1 {
+        font-size: 1.8rem;
+    }
 }
 
 /* contacts; footer */
