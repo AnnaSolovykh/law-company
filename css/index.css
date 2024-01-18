@@ -247,7 +247,7 @@
 }
 
 #about-info a{
-    color: #379DE1;
+    color: #3b86b9;
 }
 
 #about-info span {
@@ -255,7 +255,7 @@
 }
 
 #about-info a:hover {
-    color: #1c7dbe;
+    color: #379DE1;
     transition: all 0.3s ease-in-out;
 }
 
@@ -525,7 +525,7 @@ iframe {
 
 
 .text-row a:hover {
-    color: #1c7dbe;
+    color: #379DE1;
 }
 
 @media (max-width: 1300px) {
@@ -599,7 +599,7 @@ hr {
 }
 
 .links-content div a:hover {
-    color: #1c7dbe;
+    color: #379DE1;
 }
 
 .links-content-mobile {

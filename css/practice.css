@@ -24,20 +24,37 @@
     color: #FFFFFF;
 }
 
-.practice-area-text-wrapper ul {
-    list-style-type: none; 
-}
-
 .practice-area-text-wrapper li{
     color: #FFFFFF;
     line-height: 1.2;
 }
 
-.practice-area-text-wrapper ul li::before {
-    content: '\2022'; 
-    color: #B49C73; 
-    font-size: 20px;
-    margin-right: 10px; 
+.practice-area-text-wrapper a {
+    font-style: italic;
+    color: #3b86b9;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.practice-area-text-wrapper a:hover {
+    color: #379DE1;
+}
+
+.practice-area-text-wrapper a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1.2px; 
+    bottom: -5px;
+    left: 0;
+    background-color: #379DE1; 
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.practice-area-text-wrapper a:hover::after {
+    visibility: visible;
+    width: 100%;
 }
 
 @media (max-width: 768px) { 
@@ -50,7 +67,6 @@
         height: auto; 
         object-fit: cover; 
     }
-    
     .practice-area-text-wrapper {
         width: 100%;
     }
