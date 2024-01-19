@@ -18,7 +18,6 @@
     background-image: url('/assets/pictures/pexels-pavel-danilyuk-hero-bg-cropped.webp');
     background-size: cover;
     background-position: right top;
-    opacity: 0.5; 
     z-index: -1;
 }
 
@@ -50,6 +49,7 @@
     font-weight: 200;
     letter-spacing: 3px;
     font-size: 2rem;
+    text-transform: uppercase;
 }
 
 .hero-title-line-three {
@@ -97,7 +97,22 @@
     }
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1024px) {
+    .hero-content {
+        padding-left: 0;
+    }
+    .hero-content-text {
+        top: 47%;
+        width: 100%;
+        padding: 10px;
+        position: relative;
+        background: rgba(0, 0, 0, 0.334); 
+    }
+    .hero-title-line-one,
+    .hero-title-line-two,
+    .hero-title-line-three {
+        margin-left: 10px;
+    }
     .hero-title-line-one  {
         font-size: 2.5rem;
     }
@@ -108,6 +123,7 @@
         font-size: 1.5rem;
     }
     .hero-button {
+        margin-left: 20px;
         font-size: 1.5rem;
     }
 }
@@ -136,6 +152,7 @@
         font-size: 1.5rem;
     }
     .hero-title-line-three {
+        top: 80%;
         font-size: 1.3rem;
         line-height: 1;
     }
@@ -145,36 +162,18 @@
     .hero-background {
         height: 50vh;
     } 
-    .hero-background::before {
-        opacity: 1;
-    }
-    .hero-content {
-        padding-left: 0;
-    }
-    .hero-content-text {
-        top: 47%;
-        width: 100%;
-        padding: 10px;
-        position: relative;
-        background: rgba(0, 0, 0, 0.334); 
-    }
     .hero-title-line-one  {
-        margin-left: 10px;
         font-size: 1.8rem;
     }
     .hero-title-line-two {
-        margin-left: 10px;
         font-size: 1.2rem;
     }
     .hero-title-line-three {
-        margin-left: 10px;
         font-size: 1.1rem;
     }
     .hero-button {
-        top: 80%;
-        margin-left: 20px;
         font-size: 1.2rem;
-    }
+    } 
 }
 
 @media screen and (min-width:390px) and (max-width: 430px) {

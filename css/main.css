@@ -33,7 +33,6 @@ a:hover {
 h2 {
     font-family: 'Lora', serif;
     color: #B49C73;
-    /* font-size:  2rem; */
     font-size: clamp(1.3rem, 2vw, 2rem); 
 }
 
