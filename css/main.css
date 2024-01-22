@@ -130,7 +130,7 @@ h2 {
         top: 80px;
         right: 0;
         width: 100%;
-        height: 95vh;
+        height: 95vh; 
         background-color: #1E1E1E;
         flex-direction: column;
         align-items: flex-end;
@@ -181,6 +181,19 @@ h2 {
         height: 90vh;
     }
 }
+
+@media screen and (max-width: 769px) {
+    .navbar-menu{
+        height: 85vh;
+    } 
+} 
+/* 
+@media screen and (max-width: 481px) {
+    .navbar-menu {
+        height: 50vh;
+    } 
+}  */
+
 
 #languageSwitcher {
     cursor: pointer;
