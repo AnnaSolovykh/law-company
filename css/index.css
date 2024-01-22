@@ -172,6 +172,7 @@
         font-size: 1.1rem;
     }
     .hero-button {
+        top: 82%;
         font-size: 1.2rem;
     } 
 }

@@ -178,22 +178,15 @@ h2 {
 
 @media screen and (max-width: 1024px) {
     .navbar-menu {
-        height: 90vh;
+        height: 92vh;
     }
 }
 
 @media screen and (max-width: 769px) {
     .navbar-menu{
-        height: 85vh;
+        height: 87vh;
     } 
 } 
-/* 
-@media screen and (max-width: 481px) {
-    .navbar-menu {
-        height: 50vh;
-    } 
-}  */
-
 
 #languageSwitcher {
     cursor: pointer;
