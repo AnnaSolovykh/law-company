@@ -23,6 +23,7 @@ html {
 a { 
     text-decoration: none;
     color: inherit;
+    font-size: clamp(1.025rem, 2vw, 1.124rem);
 }
 
 a:hover {
@@ -187,6 +188,38 @@ h2 {
         height: 87vh;
     } 
 } 
+/* 
+.navbar-menu {
+    position: relative;
+}
+
+.dropdown-trigger {
+    position: relative;
+    display: inline-block; 
+}
+
+.dropdown-trigger:hover .dropdown {
+    display: block;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 180%; /
+    background-color:#1E1E1E;
+    font-size: 0.7rem;
+    max-width: 160px;
+    z-index: 99;
+}
+
+.dropdown a {
+    color: white;
+    font-size: 0.8rem;
+    margin-top: 5px;
+} */
+
+
 
 #languageSwitcher {
     cursor: pointer;
@@ -428,6 +461,7 @@ footer {
 
 .creator-wrapper p {
     color: #B49C73;
+    font-size: 0.7rem;
 }
 
 .creator-wrapper a {
@@ -435,6 +469,7 @@ footer {
     position: relative;
     display: inline-block; 
     transition: all 0.5s ease-in-out;
+    font-size: 0.7rem;
 }
 
 .creator-wrapper a::after {
@@ -466,6 +501,9 @@ footer {
 @media (max-width: 768px) { 
     .creator-wrapper {
         letter-spacing: 1px;
+    }
+    .creator-wrapper p,
+    .creator-wrapper a {
         font-size: 0.6rem;
     }
     .creator-wrapper a:hover::after {
