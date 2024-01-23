@@ -188,38 +188,6 @@ h2 {
         height: 87vh;
     } 
 } 
-/* 
-.navbar-menu {
-    position: relative;
-}
-
-.dropdown-trigger {
-    position: relative;
-    display: inline-block; 
-}
-
-.dropdown-trigger:hover .dropdown {
-    display: block;
-}
-
-.dropdown {
-    display: none;
-    position: absolute;
-    left: 0;
-    top: 180%; /
-    background-color:#1E1E1E;
-    font-size: 0.7rem;
-    max-width: 160px;
-    z-index: 99;
-}
-
-.dropdown a {
-    color: white;
-    font-size: 0.8rem;
-    margin-top: 5px;
-} */
-
-
 
 #languageSwitcher {
     cursor: pointer;
