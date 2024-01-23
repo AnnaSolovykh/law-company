@@ -23,7 +23,6 @@ html {
 a { 
     text-decoration: none;
     color: inherit;
-    font-size: clamp(1.025rem, 2vw, 1.124rem);
 }
 
 a:hover {
@@ -34,7 +33,6 @@ a:hover {
 h2 {
     font-family: 'Lora', serif;
     color: #B49C73;
-    font-size: clamp(1.3rem, 2vw, 2rem); 
 }
 
 /* navbar */
@@ -232,10 +230,8 @@ h2 {
 }
 
 .text-wrapper h2 {
-    font-family: 'Lora', serif;
-    font-size: clamp(1.2rem, 2vw, 1.4rem);
+    font-size: 1.4rem;
     letter-spacing: 1px;
-    color :#B49C73;
 }
 
 .text-wrapper h3 {
@@ -284,11 +280,14 @@ h2 {
     top: -4px; 
 }
 
-
 @media (max-width: 768px) { 
     .title-wrapper h1 {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
     }
+    .text-wrapper h2 {
+        font-size: 1.15rem;
+    }
+    
 }
 
 /* contacts; footer */

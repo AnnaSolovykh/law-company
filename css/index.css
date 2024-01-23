@@ -246,8 +246,9 @@
     color: white;
 }
 
-#about-info a{
+#about-info a {
     color: #3b86b9;
+    font-size: clamp(1.025rem, 2vw, 1.124rem);
 }
 
 #about-info span {
@@ -531,6 +532,7 @@ iframe {
     font-style: italic;
     color: #3b86b9;
     transition: all 0.3s ease-in-out;
+    font-size: clamp(1.025rem, 2vw, 1.124rem);
 }
 
 
@@ -603,6 +605,7 @@ hr {
 
 .links-content div a {
     font-style: italic;
+    font-size: clamp(1.025rem, 2vw, 1.124rem);
     color: #3b86b9;
     flex: 4;
     transition: all 0.3s ease-in-out;

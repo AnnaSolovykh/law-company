@@ -74,8 +74,9 @@
     height: auto;
 }
 
-.text-wrapper span, h2 {
+.text-wrapper span {
     color: #B49C73; 
+    font-size: clamp(1.025rem, 2vw, 1.124rem);
 }
 
 p {
