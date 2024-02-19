@@ -15,7 +15,7 @@ jobs:
     - name: FTP Deploy to Server
       uses: SamKirkland/FTP-Deploy-Action@4.1.0
       with:
-        ftp-server: ftp://ftp.yourdomain.com/public_html/
+        ftp-server: ftp://ftp.afemidalaw.com
         ftp-username: ${{ secrets.FTP_USERNAME }}
         ftp-password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./  
