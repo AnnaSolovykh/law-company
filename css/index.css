@@ -208,9 +208,8 @@
 }
 
 .single-value h3 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-family: 'Lora', serif;
-    /* font-size: 1.2rem; */
     min-height: 2rem; 
 }
 
@@ -448,6 +447,8 @@
 }
 
 .reasonsToChoose-text-item h3 {
+    font-family: 'Lora', serif;
+    font-size: 1.2rem;
     margin: 1px 10px;
 }
 
