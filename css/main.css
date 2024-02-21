@@ -9,8 +9,6 @@ body {
     color: #000000;
     font-size: clamp(1rem, 2vw, 1.1rem);
     background-color: #1E1E1E;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale; 
 }
 
 *, *::before, *::after {
