@@ -10,3 +10,5 @@ RewriteRule ^$ /ru/ [L,R=301]
 
 # Default redirect to English version
 RewriteRule ^$ /en/ [L,R=301]
+
+
