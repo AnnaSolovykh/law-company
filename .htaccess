@@ -4,11 +4,5 @@ RewriteEngine On
 RewriteCond %{HTTPS} off
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-# Redirect to Russian version if the browser language is Russian
-#RewriteCond %{HTTP:Accept-Language} ^ru [NC]
-#RewriteRule ^$ /ru/ [L,R=301]
-
-# Default redirect to English version
-#RewriteRule ^$ /en/ [L,R=301]
-
-
+# Redirect root to the English version by default
+RewriteRule ^$ /en/ [L,R=301]
