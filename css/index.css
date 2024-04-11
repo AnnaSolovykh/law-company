@@ -261,6 +261,61 @@
     transition: all 0.3s ease-in-out;
 }
 
+/* attorneys */
+.attorneys-wrapper {
+    display: grid;
+    grid-template-columns: auto 1fr; 
+    column-gap: 50px; 
+    align-items: center; 
+}
+
+.attorneys-wrapper img {
+    height: 100%;
+    max-width: 20rem;
+    object-fit: contain;
+}
+
+.attorneys-text-wrapper {
+    color: white;
+}
+
+.attorneys-text-wrapper span, .attorneys-text-email-wrapper p {
+    color: #B49C73; 
+} 
+
+.attorneys-text-email-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.attorneys-text-email-wrapper a {
+    margin-left: 10px;
+    color: #3b86b9;
+}
+
+.attorneys-text-email-wrapper a:hover {
+    color: #379DE1;
+    transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .attorneys-wrapper {
+        grid-template-columns: 1fr; 
+        column-gap: 0; 
+    }    
+    
+    .attorneys-wrapper img {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .attorneys-wrapper {
+        grid-template-columns: 1fr 2fr; 
+        column-gap: 20px; 
+    }
+}
+
 /* practice */
 
 .bg-wrapper {
