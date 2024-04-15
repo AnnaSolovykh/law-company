@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
@@ -117,8 +118,17 @@
                 <article id="attorneys">
                     <h2>Our Attorneys</h2>
                     <div class="attorneys-wrapper">
-                        <img src="/assets/pictures/asli_seldag.JPG" alt="the attorney Asli Seldag in Afemida Law Company"/>
-                        <div class="attorneys-text-wrapper">
+                        <img 
+                            src="/assets/pictures/asli_seldag.JPG" 
+                            alt="the attorney Asli Seldag in Afemida Law Company"
+                            data-aos="fade-right"
+                            data-aos-delay="100" 
+                        />
+                        <div 
+                            class="attorneys-text-wrapper"
+                            data-aos="fade-left"
+                            data-aos-delay="400" 
+                        >
                             <p>
                                 <span>Lawyer Aslı Seldağ</span> 
                                 was born in Nicosia on October 9, 1983. She graduated from GAZI High School in Lefke, Northern Cyprus, ranking second in her class among students specializing in foreign languages and social sciences. In 2006, Lawyer Aslı Seldağ obtained her high education diploma from the Faculty of Law at Eastern Mediterranean University in Northern Cyprus. In 2007, after a year of internship, she became a member of the Bar Association of Northern Cyprus. From 2015 to 2016, Lawyer Aslı Seldağ completed internships at the Çağlayan Courthouse in Turkey and at the law office of Mehmet Mirza Tan in Istanbul, making her eligible for registration with the Istanbul Bar Association. Since 2021, Aslı Seldağ has been a registered member of the Bar Association in Kyrenia/Girne. In 2000, Lawyer Aslı Seldağ underwent additional training in English and French languages in New York and Canada. Lawyer Aslı Seldağ is fluent in English.
@@ -445,8 +455,15 @@
             </p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="/js/main.js"></script>    
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="/js/index.js"></script>
 </body>
+    <script>
+        AOS.init({
+            duration: 1000, 
+            once: true, 
+        });
+    </script>  
 </html>
