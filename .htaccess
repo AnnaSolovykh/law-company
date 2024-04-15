@@ -1,8 +1,17 @@
 RewriteEngine On
 
-# Enforce HTTPS
+# Redirect HTTP to HTTPS
 RewriteCond %{HTTPS} off
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
+# Redirect non-www to www (if www is preferred)
+RewriteCond %{HTTP_HOST} ^afemidalaw.com [NC]
+RewriteRule ^ https://www.afemidalaw.com%{REQUEST_URI} [L,R=301]
+
 # Redirect root to the English version by default
 RewriteRule ^$ /en/ [L,R=301]
+
+# Ensure all language-specific directories use HTTPS
+RewriteCond %{HTTPS} off
+RewriteCond %{REQUEST_URI} ^/(en|ru)/
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
