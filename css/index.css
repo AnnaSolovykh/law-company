@@ -270,7 +270,7 @@
 }
 
 .attorneys-wrapper img {
-    height: 100%;
+    height: autogit;
     max-width: 20rem;
     object-fit: contain;
 }
