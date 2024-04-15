@@ -1,3 +1,9 @@
-/en/*  /en/:splat  302
-/ru/*  /ru/:splat  302
-/*    /en/:splat    301!
+# Redirect root to the English version by default
+/ /en/ 301!
+
+# Redirect language-specific URLs
+/en/* /en/:splat 302
+/ru/* /ru/:splat 302
+
+# Redirect all other requests to the English version
+/* /en/:splat 301!
