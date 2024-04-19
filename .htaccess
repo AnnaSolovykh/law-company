@@ -1,17 +1,35 @@
+# RewriteEngine On
+
+# # Redirect HTTP to HTTPS
+# RewriteCond %{HTTPS} off
+# RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# # Redirect non-www to www (if www is preferred)
+# RewriteCond %{HTTP_HOST} ^afemidalaw.com [NC]
+# RewriteRule ^ https://www.afemidalaw.com%{REQUEST_URI} [L,R=301]
+
+# # Redirect root to the English version by default
+# RewriteRule ^$ /en/ [L,R=301]
+
+# # Ensure all language-specific directories use HTTPS
+# RewriteCond %{HTTPS} off
+# RewriteCond %{REQUEST_URI} ^/(en|ru)/
+# RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+
 RewriteEngine On
 
-# Redirect HTTP to HTTPS
-RewriteCond %{HTTPS} off
-RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-
-# Redirect non-www to www (if www is preferred)
-RewriteCond %{HTTP_HOST} ^afemidalaw.com [NC]
+# Combine HTTP to HTTPS and non-www to www redirection into one step
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^afemidalaw.com$
 RewriteRule ^ https://www.afemidalaw.com%{REQUEST_URI} [L,R=301]
 
-# Redirect root to the English version by default
-RewriteRule ^$ /en/ [L,R=301]
+# Redirect root directly to the English version in one go
+RewriteCond %{HTTP_HOST} ^www.afemidalaw.com$
+RewriteCond %{REQUEST_URI} ^/$
+RewriteRule ^ https://www.afemidalaw.com/en/ [L,R=301]
 
-# Ensure all language-specific directories use HTTPS
+# Ensure that direct accesses to language-specific directories are via HTTPS
 RewriteCond %{HTTPS} off
 RewriteCond %{REQUEST_URI} ^/(en|ru)/
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
