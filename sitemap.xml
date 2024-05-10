@@ -2,59 +2,77 @@
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    
+    <!-- English Home Page -->
     <url>
         <loc>https://www.afemidalaw.com/en/</loc>
-        <xhtml:link 
-            rel="alternate"
-            hreflang="en"
-            href="https://www.afemidalaw.com/en/"/>
-        <xhtml:link 
-            rel="alternate"
-            hreflang="ru"
-            href="https://www.afemidalaw.com/ru/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.afemidalaw.com/en/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://www.afemidalaw.com/ru/"/>
         <lastmod>2024-04-19T01:22:56+00:00</lastmod>
         <priority>1.00</priority>
     </url>
-    
+
+    <!-- Russian Home Page -->
+    <url>
+        <loc>https://www.afemidalaw.com/ru/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.afemidalaw.com/en/"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://www.afemidalaw.com/ru/"/>
+        <lastmod>2024-04-19T01:22:56+00:00</lastmod>
+        <priority>1.00</priority>
+    </url>
+
+    <!-- English Practice Page -->
     <url>
         <loc>https://www.afemidalaw.com/en/practice.html</loc>
-        <xhtml:link 
-            rel="alternate"
-            hreflang="en"
-            href="https://www.afemidalaw.com/en/practice.html"/>
-        <xhtml:link 
-            rel="alternate"
-            hreflang="ru"
-            href="https://www.afemidalaw.com/ru/practice.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.afemidalaw.com/en/practice.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://www.afemidalaw.com/ru/practice.html"/>
         <lastmod>2024-04-16T15:41:38+00:00</lastmod>
         <priority>0.80</priority>
     </url>
+
+    <!-- Russian Practice Page -->
+    <url>
+        <loc>https://www.afemidalaw.com/ru/practice.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.afemidalaw.com/en/practice.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://www.afemidalaw.com/ru/practice.html"/>
+        <lastmod>2024-04-16T15:41:38+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+
+    <!-- English Northern Cyprus Page -->
     <url>
         <loc>https://www.afemidalaw.com/en/northern-cyprus.html</loc>
-        <xhtml:link 
-            rel="alternate"
-            hreflang="en"
-            href="https://www.afemidalaw.com/en/northern-cyprus.html"/>
-        <xhtml:link 
-            rel="alternate"
-            hreflang="ru"
-            href="https://www.afemidalaw.com/ru/northern-cyprus.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.afemidalaw.com/en/northern-cyprus.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://www.afemidalaw.com/ru/northern-cyprus.html"/>
         <lastmod>2024-04-16T15:41:37+00:00</lastmod>
         <priority>0.80</priority>
     </url>
+
+    <!-- Russian Northern Cyprus Page -->
     <url>
-        <loc>
-        https://www.afemidalaw.com/en/company-formation.html
-        </loc>
-        <xhtml:link 
-            rel="alternate"
-            hreflang="en"
-            href="https://www.afemidalaw.com/en/company-formation.html"/>
-        <xhtml:link 
-            rel="alternate"
-            hreflang="ru"
-            href="https://www.afemidalaw.com/ru/company-formation.html"/>
+        <loc>https://www.afemidalaw.com/ru/northern-cyprus.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.afemidalaw.com/en/northern-cyprus.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://www.afemidalaw.com/ru/northern-cyprus.html"/>
+        <lastmod>2024-04-16T15:41:37+00:00</lastmod>
+        <priority>0.80</priority>
+    </url>
+
+    <!-- English Company Formation Page -->
+    <url>
+        <loc>https://www.afemidalaw.com/en/company-formation.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.afemidalaw.com/en/company-formation.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://www.afemidalaw.com/ru/company-formation.html"/>
         <lastmod>2024-04-16T15:41:35+00:00</lastmod>
         <priority>0.64</priority>
     </url>
+
+    <!-- Russian Company Formation Page -->
+    <url>
+        <loc>https://www.afemidalaw.com/ru/company-formation.html</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.afemidalaw.com/en/company-formation.html"/>
+        <xhtml:link rel="alternate" hreflang="ru" href="https://www.afemidalaw.com/ru/company-formation.html"/>
+        <lastmod>2024-04-16T15:41:35+00:00</lastmod>
+        <priority>0.64</priority>
+    </url>
+
 </urlset>
