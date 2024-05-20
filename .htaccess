@@ -33,3 +33,7 @@ RewriteRule ^ https://www.afemidalaw.com/en/ [L,R=301]
 RewriteCond %{HTTPS} off
 RewriteCond %{REQUEST_URI} ^/(en|ru)/
 RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Redirect old index.html to the new page
+Redirect 301 /en/index.html https://afemidalaw.com/en/
+Redirect 301 /ru/index.html https://afemidalaw.com/ru/
